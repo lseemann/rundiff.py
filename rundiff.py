@@ -74,6 +74,8 @@ def main():
     sys.exit()
 
   team = teams[team]
+  if lastyear < firstyear:
+    lastyear = firstyear
 
   for year in xrange(firstyear,lastyear + 1):
     year            = str(year)
