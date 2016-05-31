@@ -48,11 +48,11 @@ def main():
     opts, args = getopt.getopt(sys.argv[1:],"ht:f:l:",["team=","firstyear=","lastyear="])
   except getopt.GetoptError as error:
     print error
-    print 'scrape.py -t <team abbreviation> -f <first year> -l <last year>'
+    print 'scrape.py -t <team> -f <first year> -l <last year>'
     sys.exit()
   for opt, arg in opts:
     if opt == '-h':
-       print 'scrape.py -t <team abbreviation> -f <first year> -l <last year>'
+       print 'scrape.py -t <team> -f <first year> -l <last year>'
        sys.exit()
     elif opt in ("-t", "--team"):
        team = arg
@@ -120,3 +120,4 @@ def main():
 
 if __name__ == "__main__":
    main()
+
